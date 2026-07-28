@@ -1,0 +1,50 @@
+# Internalization Projects — Pi 上下文
+
+这是一个 Internalization（内化）项目空间。下面每个子目录是一个 `object × intent` 项目。
+
+## 核心概念
+
+```
+project = object × intent
+```
+
+- **Object**：你面对的材料（书、课程、论文、代码库）。它有自身的结构和设计意图。
+- **Intent**：你以什么态度进入这段关系（master / experience / explore / critique / reference / custom / open）。
+
+详见 `README.md`。
+
+## 首次进入新子目录
+
+如果用户在一个空目录启动 Pi 且该目录没有 `.pi/project.md`：
+
+1. 检查同级目录 `material-vault/` 是否存在
+2. 询问用户是否要设置项目——引导对话，不要自动创建
+3. 按顺序问：object 名称 → intent → 材料路径（可选）
+4. 写入 `.pi/project.md`
+5. 根据 intent 推荐产出类型，但明确表示「不强制」
+
+## Intent 与推荐产出
+
+| intent | 推荐产出 | 技能 |
+|--------|---------|------|
+| master | atoms/ + review.md + framework.md | 全套技能可用 |
+| experience | notes/ + optional reading-notes.md | review, link-atoms 可选 |
+| explore | notes/ 随缘 | 无预设 |
+| critique | atoms/ + review.md + summary.md | 全套技能可用，但 framework 改为 summary |
+| reference | 不产出 | 按需回答 |
+| custom | 用户自定 | 引导用户配置 |
+| open | 不预设 | 第一句话决定 |
+
+## Skill 命令
+
+- `/skill:extract-outline material/<file>` — 提取大纲
+- `/skill:link-atoms` — 扫 atoms/ 补交叉引用
+- `/skill:learning-review` — 生成回顾
+- `/skill:learning-framework` — 生成最终总结
+
+## 写作约定
+
+- `atoms/*.md` 的 frontmatter 用 `author: human / ai / mixed` 标记作者
+- 用户手写的 [[引用]] 不覆盖
+- AI 补充的引用用 `<!-- ai:suggested -->` 标注
+- 写 atom 时，内容限于当前会话中实际涉及的，不要向外搬运知识

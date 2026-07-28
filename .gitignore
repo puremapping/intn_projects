@@ -1,0 +1,11 @@
+# Pi 会话文件
+.pi/sessions/
+
+# 大型材料文件（PDF 等不适合入仓）
+material/*.pdf
+material/*.epub
+material/*.mobi
+
+# 系统文件
+.DS_Store
+Thumbs.db
