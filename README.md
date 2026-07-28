@@ -1,5 +1,7 @@
 # Internalization Projects
 
+> Concept, design & terminology by puremapping · Written by pi (AI coding agent)
+
 **Internalization** 是你与一个对象（书、课程、论文、代码库、任何值得专注面对的材料）之间一段有意向的关系的容器。
 
 与传统的 project（对外交付软件、设计稿、研究报告）不同，internalization project 的对象不被你加工改变——**改变的恰恰是你自己**。你让对象影响你、塑造你，而你留下的笔记、框架、总结，都是这个内化过程的自然沉淀，而非对外交付物。
