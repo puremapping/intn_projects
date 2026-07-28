@@ -44,6 +44,11 @@ project = object × intent
 
 ## 写作约定
 
+- **署名规范**：所有产出的文件（README、summary、framework、notes、atoms）按以下格式署名：
+  ```
+  Concept, design & terminology by puremapping · Written by pi (AI coding agent)
+  ```
+  对于较小或非正式的文件（如 notes 随手记），可简写为 `by puremapping & pi`。
 - `atoms/*.md` 的 frontmatter 用 `author: human / ai / mixed` 标记作者
 - 用户手写的 [[引用]] 不覆盖
 - AI 补充的引用用 `<!-- ai:suggested -->` 标注
