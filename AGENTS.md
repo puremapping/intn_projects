@@ -27,7 +27,7 @@ project = object × intent
 
 | intent | 推荐产出 | 技能 |
 |--------|---------|------|
-| master | atoms/ + review.md + framework.md | 全套技能可用 |
+| master | atoms/ + reviews/（分阶段回顾）+ framework.md | 全套技能可用 |
 | experience | notes/ + optional reading-notes.md | review, link-atoms 可选 |
 | explore | notes/ 随缘 | 无预设 |
 | critique | atoms/ + review.md + summary.md | 全套技能可用，但 framework 改为 summary |
@@ -53,3 +53,12 @@ project = object × intent
 - 用户手写的 [[引用]] 不覆盖
 - AI 补充的引用用 `<!-- ai:suggested -->` 标注
 - 写 atom 时，内容限于当前会话中实际涉及的，不要向外搬运知识
+
+## 仓库更新规则（git / GitHub）
+
+本仓库 `intn_projects` 只维护**系统设计**部分（AGENTS.md、README.md、ANNOTATION_SPEC.md 等框架/约定文档），**不纳入具体项目内容**（lmstudio/、stablediffusion/ 等 `object × intent` 项目目录，由 .gitignore 排除，靠 Syncthing 同步）。
+
+- 允许更新：系统设计的约定、技能、规则调整
+- 不提交：任何项目的产出（atoms/、notes/、reviews/、material/）
+- 但可以在更新说明中**提到项目名**作为示例（如「lmstudio 与 stablediffusion 按 reviews/ 分阶段归档」）
+- 提交粒度：系统设计改动分开 commit（如 AGENTS.md 约定与 .gitignore 配置分开）
