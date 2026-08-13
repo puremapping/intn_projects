@@ -106,6 +106,7 @@ date_start: 2026-07-22           # 开始日期
 | `framework.md` | 概念关系图 | master |
 | `summary.md` | 背景+梗概+评析+联系+升华 | experience, critique |
 | `reading-notes.md` | 阅读手记 | experience |
+| `exam-阶段XX.md` | 阶段考试（概念/机制/应用/开放四部分）+ 批改 | master（可选，查漏补缺） |
 
 所有产出都是**可选**的，不是流水线。你觉得需要才产出。
 
@@ -121,8 +122,21 @@ date_start: 2026-07-22           # 开始日期
 | `link-atoms` | 扫描 atoms/ 补交叉引用 | `/skill:link-atoms` |
 | `learning-review` | 分析当前会话，生成回顾 | `/skill:learning-review` |
 | `learning-framework` | 综合笔记+回顾+大纲，输出最终总结 | `/skill:learning-framework` |
+| `learning-exam` | 生成考卷、三档批改、补习、盲区回流 | `/skill:learning-exam` |
 
 除技能外，你随时可以让我直接做任何事——写一段总结、画一张概念图、解释一个概念——无需通过技能。
+
+## 查漏补缺闭环（考试与补习）
+
+master 类学习到一定阶段后，可用考试验证掌握情况——比补写 atoms 更能暴露真实盲区：**讲得出来不代表调得出来，提取失败的地方才是盲区。**
+
+```
+考试（exam-阶段XX.md）→ 批改（掌握/偏/漏三档）→ 补习（逐题复讲）→ 回流（盲区 → atoms + review）
+```
+
+- 考卷四部分：概念定义 / 机制理解（重点考讲义之外的深挖内容）/ 关系应用 / 开放题
+- 批改不是打分，目的是定位盲区；漏/偏处回流成 atom 才算闭环
+- 用户可跳过考试直接进入 review/framework——产出不强制
 
 ---
 
