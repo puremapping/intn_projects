@@ -9,6 +9,7 @@ material/*.mobi
 # 具体项目内容不入仓（由 Syncthing 同步，仓库只维护系统设计）
 lmstudio/
 stablediffusion/
+计算精神病学状态空间模型/
 
 # 系统文件
 .DS_Store
