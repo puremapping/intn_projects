@@ -27,7 +27,7 @@ project = object × intent
 
 | intent | 推荐产出 | 技能 |
 |--------|---------|------|
-| master | atoms/ + reviews/（分阶段回顾）+ framework.md | 全套技能可用 |
+| master | atoms/ + reviews/（分阶段回顾）+ framework.md（可选 exam 查漏补缺） | 全套技能可用 |
 | experience | notes/ + optional reading-notes.md | review, link-atoms 可选 |
 | explore | notes/ 随缘 | 无预设 |
 | critique | atoms/ + review.md + summary.md | 全套技能可用，但 framework 改为 summary |
@@ -41,6 +41,7 @@ project = object × intent
 - `/skill:link-atoms` — 扫 atoms/ 补交叉引用
 - `/skill:learning-review` — 生成回顾
 - `/skill:learning-framework` — 生成最终总结
+- `/skill:learning-exam` — 阶段考试与补习（查漏补缺闭环）
 
 ## 写作约定
 
